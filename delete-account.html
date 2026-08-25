@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your account — Rootine</title>
+<meta name="description" content="How to delete your Rootine account and all data associated with it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF9F5;
+    --ink:#1A2B24;
+    --muted:#5C6E66;
+    --teal:#1D9E75;
+    --line:#E1E7E2;
+    --peach:#E89A6C;
+    --measure:44rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--measure);margin:0 auto;padding:0 1.5rem}
+
+  header{border-bottom:1px solid var(--line)}
+  .head-inner{
+    max-width:var(--measure);margin:0 auto;padding:1.25rem 1.5rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .brand{
+    display:flex;align-items:center;gap:.6rem;
+    font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.15rem;
+    letter-spacing:-.01em;text-decoration:none;color:var(--ink);
+  }
+  .mark{
+    width:26px;height:26px;border-radius:8px;flex:none;
+    background:linear-gradient(135deg,var(--teal),var(--peach));
+    display:grid;place-items:center;color:#fff;
+    font-size:.8rem;font-weight:600;font-family:'Fraunces',serif;
+  }
+  .lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
+  .lang button{
+    appearance:none;border:0;background:none;cursor:pointer;
+    font:500 .8rem/1 'Inter',sans-serif;color:var(--muted);
+    padding:.5rem .85rem;letter-spacing:.02em;
+  }
+  .lang button[aria-pressed="true"]{background:var(--teal);color:#fff}
+  .lang button:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+  h1{
+    font-family:'Fraunces',Georgia,serif;font-weight:600;
+    font-size:clamp(2rem,5vw,2.6rem);line-height:1.15;letter-spacing:-.02em;
+    margin:2.75rem 0 .75rem;
+  }
+  .lede{color:var(--muted);margin:0 0 2.5rem;font-size:1.05rem}
+
+  .route{
+    background:#fff;border:1px solid var(--line);border-radius:14px;
+    padding:1.5rem;margin:0 0 1.25rem;
+  }
+  .route .tag{
+    display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--teal);margin:0 0 .6rem;
+  }
+  .route h2{
+    font-family:'Fraunces',Georgia,serif;font-weight:600;
+    font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .65rem;line-height:1.3;
+  }
+  .route p{margin:0 0 .85rem}
+  .route p:last-child{margin-bottom:0}
+  ol.steps{margin:0;padding-left:1.3rem}
+  ol.steps li{margin:0 0 .45rem}
+  ol.steps li:last-child{margin-bottom:0}
+
+  .mail{
+    display:inline-block;margin:.4rem 0 .2rem;
+    font-weight:600;color:var(--teal);text-decoration:none;
+    border-bottom:2px solid rgba(29,158,117,.25);
+  }
+  .mail:hover{border-bottom-color:var(--teal)}
+
+  h3{
+    font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.2rem;
+    letter-spacing:-.01em;margin:2.5rem 0 .75rem;
+  }
+  p{margin:0 0 1rem}
+  ul.body{margin:0 0 1rem;padding-left:1.15rem}
+  ul.body li{margin:0 0 .4rem}
+  a{color:var(--teal)}
+  strong{font-weight:600}
+
+  .note{
+    border-left:3px solid var(--peach);background:#fff;
+    padding:1rem 1.25rem;border-radius:0 10px 10px 0;margin:1.5rem 0;
+  }
+  .note p:last-child{margin-bottom:0}
+
+  footer{
+    border-top:1px solid var(--line);margin-top:3rem;padding:2rem 0 3.5rem;
+    color:var(--muted);font-size:.9rem;
+  }
+  footer a{color:var(--teal)}
+  [hidden]{display:none !important}
+  @media (max-width:600px){body{font-size:16px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-inner">
+    <a class="brand" href="#top"><span class="mark">R</span> Rootine</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" data-set="tr" aria-pressed="false">TR</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================= ENGLISH ============================= -->
+<main id="top" class="wrap" data-lang="en">
+
+  <h1>Delete your account</h1>
+  <p class="lede">You can remove your Rootine account and everything stored with it. There are two ways to do it.</p>
+
+  <div class="route">
+    <span class="tag">Fastest — takes a minute</span>
+    <h2>Delete it in the app</h2>
+    <ol class="steps">
+      <li>Open Rootine and sign in</li>
+      <li>Go to <strong>Profile</strong></li>
+      <li>Tap <strong>Delete account</strong></li>
+      <li>Confirm when asked</li>
+    </ol>
+    <p style="margin-top:.9rem">Your account and data are erased straight away.</p>
+  </div>
+
+  <div class="route">
+    <span class="tag">If you no longer have the app</span>
+    <h2>Ask us to delete it</h2>
+    <p>Email us from the address you signed up with, so we can confirm the account is yours:</p>
+    <a class="mail" href="mailto:rootineteam@gmail.com?subject=Delete%20my%20account">rootineteam@gmail.com</a>
+    <p>Put <strong>"Delete my account"</strong> in the subject line. We'll confirm once it's done, within 30 days and usually much sooner.</p>
+  </div>
+
+  <h3>What gets deleted</h3>
+  <ul class="body">
+    <li>Your account and sign-in credentials</li>
+    <li>All habits, along with their descriptions, icons and reminder settings</li>
+    <li>Every check-in record</li>
+    <li>All mood entries</li>
+    <li>Freeze tokens and challenge progress</li>
+    <li>Your profile photo and app preferences, stored on your device</li>
+    <li>Any reminders scheduled on your device</li>
+  </ul>
+  <p>Nothing is kept, archived or anonymised for later use. There is no recovery period — once it's gone, it's gone.</p>
+
+  <div class="note">
+    <p><strong>One thing outside our reach.</strong> If Android's backup feature is switched on, your phone may have saved a copy of Rootine's local database to your own Google Drive. That backup belongs to your Google account, not to us. To remove it, go to your device's backup settings or drive.google.com and delete the Rootine app data there.</p>
+  </div>
+
+  <h3>Questions</h3>
+  <p>Write to <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a>. You can also read the full <a href="privacy.html">privacy policy</a>.</p>
+
+</main>
+
+<!-- ============================= TÜRKÇE ============================= -->
+<main class="wrap" data-lang="tr" hidden>
+
+  <h1>Hesabını sil</h1>
+  <p class="lede">Rootine hesabını ve onunla saklanan her şeyi kaldırabilirsin. Bunun iki yolu var.</p>
+
+  <div class="route">
+    <span class="tag">En hızlısı — bir dakika sürer</span>
+    <h2>Uygulamadan sil</h2>
+    <ol class="steps">
+      <li>Rootine'i aç ve giriş yap</li>
+      <li><strong>Profil</strong>'e git</li>
+      <li><strong>Hesabı Sil</strong>'e dokun</li>
+      <li>Sorulduğunda onayla</li>
+    </ol>
+    <p style="margin-top:.9rem">Hesabın ve verilerin anında silinir.</p>
+  </div>
+
+  <div class="route">
+    <span class="tag">Uygulama artık kurulu değilse</span>
+    <h2>Silmemizi iste</h2>
+    <p>Hesabın sana ait olduğunu doğrulayabilmemiz için kayıt olurken kullandığın adresten bize yaz:</p>
+    <a class="mail" href="mailto:rootineteam@gmail.com?subject=Hesabimi%20sil">rootineteam@gmail.com</a>
+    <p>Konu satırına <strong>"Hesabımı sil"</strong> yaz. İşlem bitince sana bildiririz — 30 gün içinde, genelde çok daha erken.</p>
+  </div>
+
+  <h3>Neler siliniyor</h3>
+  <ul class="body">
+    <li>Hesabın ve giriş bilgilerin</li>
+    <li>Tüm alışkanlıklar; açıklamaları, ikonları ve hatırlatma ayarlarıyla birlikte</li>
+    <li>Tamamlama kayıtlarının tamamı</li>
+    <li>Tüm ruh hali kayıtların</li>
+    <li>Dondurma jetonların ve challenge ilerlemen</li>
+    <li>Cihazında duran profil fotoğrafın ve uygulama tercihlerin</li>
+    <li>Cihazında zamanlanmış tüm hatırlatmalar</li>
+  </ul>
+  <p>Hiçbir şey saklanmaz, arşivlenmez veya sonradan kullanılmak üzere anonimleştirilmez. Geri alma süresi yoktur — silinen silinmiştir.</p>
+
+  <div class="note">
+    <p><strong>Elimizin ulaşmadığı tek şey.</strong> Android'in yedekleme özelliği açıksa telefonun, Rootine'in yerel veritabanının bir kopyasını kendi Google Drive'ına kaydetmiş olabilir. Bu yedek bize değil senin Google hesabına aittir. Kaldırmak için cihazının yedekleme ayarlarına ya da drive.google.com adresine gidip Rootine uygulama verisini oradan sil.</p>
+  </div>
+
+  <h3>Sorular</h3>
+  <p><a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a> adresine yaz. Ayrıntılar için <a href="privacy.html">gizlilik politikasına</a> da bakabilirsin.</p>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span data-lang="en">Rootine · <a href="privacy.html">Privacy policy</a> · <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a></span>
+    <span data-lang="tr" hidden>Rootine · <a href="privacy.html">Gizlilik politikası</a> · <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var buttons = document.querySelectorAll('.lang button');
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.hidden = (el.getAttribute('data-lang') !== lang);
+    });
+    buttons.forEach(function(b){
+      b.setAttribute('aria-pressed', b.getAttribute('data-set') === lang ? 'true' : 'false');
+    });
+    document.documentElement.lang = lang;
+  }
+  buttons.forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-set')); });
+  });
+  setLang((navigator.language || 'en').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+})();
+</script>
+
+</body>
+</html>

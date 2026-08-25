@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Rootine</title>
+<meta name="description" content="How Rootine collects, stores and protects your data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF9F5;
+    --ink:#1A2B24;
+    --muted:#5C6E66;
+    --teal:#1D9E75;
+    --teal-soft:#E9F4EF;
+    --line:#E1E7E2;
+    --peach:#E89A6C;
+    --measure:44rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--measure);margin:0 auto;padding:0 1.5rem}
+
+  /* ---------- header ---------- */
+  header{
+    border-bottom:1px solid var(--line);
+    background:var(--paper);
+  }
+  .head-inner{
+    max-width:var(--measure);margin:0 auto;padding:1.25rem 1.5rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .brand{
+    display:flex;align-items:center;gap:.6rem;
+    font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.15rem;
+    letter-spacing:-.01em;text-decoration:none;color:var(--ink);
+  }
+  .mark{
+    width:26px;height:26px;border-radius:8px;flex:none;
+    background:linear-gradient(135deg,var(--teal),var(--peach));
+    display:grid;place-items:center;
+    color:#fff;font-size:.8rem;font-weight:600;font-family:'Fraunces',serif;
+  }
+  .lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
+  .lang button{
+    appearance:none;border:0;background:none;cursor:pointer;
+    font:500 .8rem/1 'Inter',sans-serif;color:var(--muted);
+    padding:.5rem .85rem;letter-spacing:.02em;
+  }
+  .lang button[aria-pressed="true"]{background:var(--teal);color:#fff}
+  .lang button:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+  /* ---------- title block ---------- */
+  h1{
+    font-family:'Fraunces',Georgia,serif;font-weight:600;
+    font-size:clamp(2rem,5vw,2.75rem);line-height:1.12;letter-spacing:-.02em;
+    margin:2.75rem 0 .5rem;
+  }
+  .dateline{color:var(--muted);font-size:.9rem;margin:0 0 2.25rem}
+
+  /* ---------- glance card (signature) ---------- */
+  .glance{
+    background:#fff;border:1px solid var(--line);border-radius:14px;
+    padding:1.5rem 1.5rem 1.25rem;margin:0 0 2.5rem;
+  }
+  .glance h2{
+    font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--teal);
+    margin:0 0 1rem;
+  }
+  .glance ul{list-style:none;margin:0;padding:0}
+  .glance li{
+    display:flex;gap:.85rem;padding:.6rem 0;
+    border-top:1px solid var(--line);
+  }
+  .glance li:first-child{border-top:0;padding-top:0}
+  .glance li::before{
+    content:"";flex:none;width:7px;height:7px;margin-top:.6rem;border-radius:50%;
+    background:var(--teal);
+  }
+  .glance li b{font-weight:600}
+
+  /* ---------- toc ---------- */
+  nav.toc{margin:0 0 3rem}
+  nav.toc h2{
+    font-size:.72rem;font-weight:600;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 .75rem;
+  }
+  nav.toc ol{
+    list-style:none;margin:0;padding:0;
+    columns:2;column-gap:2rem;
+  }
+  nav.toc li{margin:0 0 .4rem;break-inside:avoid;font-size:.92rem}
+  nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+  nav.toc a:hover{border-bottom-color:var(--teal);color:var(--teal)}
+
+  /* ---------- sections ---------- */
+  section{margin:0 0 2.75rem;scroll-margin-top:1.5rem}
+  h2.sec{
+    font-family:'Fraunces',Georgia,serif;font-weight:600;
+    font-size:1.35rem;letter-spacing:-.01em;line-height:1.3;
+    margin:0 0 .85rem;display:flex;gap:.7rem;align-items:baseline;
+  }
+  h2.sec .num{
+    font-size:.85rem;color:var(--teal);font-variant-numeric:tabular-nums;
+    flex:none;padding-top:.15rem;
+  }
+  h3{
+    font-family:'Inter',sans-serif;font-size:.95rem;font-weight:600;
+    margin:1.5rem 0 .5rem;
+  }
+  p{margin:0 0 1rem}
+  ul.body{margin:0 0 1rem;padding-left:1.15rem}
+  ul.body li{margin:0 0 .4rem}
+  a{color:var(--teal)}
+  strong{font-weight:600}
+
+  .callout{
+    border-left:3px solid var(--peach);
+    background:#fff;
+    padding:1rem 1.25rem;border-radius:0 10px 10px 0;
+    margin:1.25rem 0;
+  }
+  .callout p:last-child{margin-bottom:0}
+
+  table{
+    width:100%;border-collapse:collapse;margin:1rem 0 1.25rem;font-size:.92rem;
+  }
+  th,td{text-align:left;padding:.65rem .5rem;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:600;color:var(--muted);font-size:.78rem;letter-spacing:.04em;text-transform:uppercase}
+
+  footer{
+    border-top:1px solid var(--line);margin-top:3rem;padding:2rem 0 3.5rem;
+    color:var(--muted);font-size:.9rem;
+  }
+  footer a{color:var(--teal)}
+
+  [hidden]{display:none !important}
+
+  @media (max-width:600px){
+    body{font-size:16px}
+    nav.toc ol{columns:1}
+  }
+  @media print{
+    header,nav.toc,.lang{display:none}
+    body{background:#fff;font-size:11pt}
+    .glance,.callout{border:1px solid #ccc}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    html{scroll-behavior:smooth}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-inner">
+    <a class="brand" href="#top"><span class="mark">R</span> Rootine</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" data-set="tr" aria-pressed="false">TR</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================= ENGLISH ============================= -->
+<main id="top" class="wrap" data-lang="en">
+
+  <h1>Privacy Policy</h1>
+  <p class="dateline">Last updated: 10 August 2026</p>
+
+  <div class="glance">
+    <h2>The short version</h2>
+    <ul>
+      <li><span>Rootine stores your habits, check-ins and mood entries so they stay safe and sync across your devices.</span></li>
+      <li><span>We don't sell your data. There are <b>no ads, no analytics, and no tracking</b> in this app.</span></li>
+      <li><span>You can delete your account and everything in it from inside the app, at any time.</span></li>
+      <li><span>Your data is stored in the European Union (Ireland).</span></li>
+    </ul>
+  </div>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#en-1">1. Who we are</a></li>
+      <li><a href="#en-2">2. What we collect</a></li>
+      <li><a href="#en-3">3. Why we process it</a></li>
+      <li><a href="#en-4">4. Where it's stored</a></li>
+      <li><a href="#en-5">5. Who we share it with</a></li>
+      <li><a href="#en-6">6. Permissions</a></li>
+      <li><a href="#en-7">7. Device backups</a></li>
+      <li><a href="#en-8">8. How long we keep it</a></li>
+      <li><a href="#en-9">9. Your rights</a></li>
+      <li><a href="#en-10">10. Deleting your account</a></li>
+      <li><a href="#en-11">11. Age requirement</a></li>
+      <li><a href="#en-12">12. Changes</a></li>
+      <li><a href="#en-13">13. Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="en-1">
+    <h2 class="sec"><span class="num">01</span> Who we are</h2>
+    <p>Rootine is a habit tracking app for Android. This policy explains what the app collects, why, and what control you have over it.</p>
+    <p>For the purposes of the UK GDPR and the EU GDPR, the developer of Rootine is the data controller. You can reach us at <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a>.</p>
+  </section>
+
+  <section id="en-2">
+    <h2 class="sec"><span class="num">02</span> What we collect</h2>
+
+    <h3>Account information</h3>
+    <ul class="body">
+      <li>Your email address</li>
+      <li>Your password, stored only as a cryptographic hash by our backend provider — we never see or store it in readable form</li>
+      <li>If you sign in with Google: your name and email address from your Google account, plus a temporary sign-in token</li>
+      <li>A unique account identifier and the date you signed up</li>
+    </ul>
+
+    <h3>Your habit data</h3>
+    <ul class="body">
+      <li>Habit names, descriptions and motivation notes you write</li>
+      <li>Icons, repeat schedules and reminder times you choose</li>
+      <li>Check-in records — which habits you completed and when</li>
+      <li>Growth stage and graduation progress</li>
+      <li>Freeze token balance and usage</li>
+      <li>Challenges you've started and your progress in them</li>
+    </ul>
+
+    <h3>Mood entries</h3>
+    <p>If you use the mood check-in feature, we store the mood you record and the date. This is optional — the app works fully without it.</p>
+    <div class="callout">
+      <p><strong>We treat mood data as sensitive.</strong> It can say something about your wellbeing, so it gets the same protection as everything else and nothing more is done with it: it is never analysed, profiled, shared or sold. It exists only to show you your own history, and you can delete it at any time.</p>
+    </div>
+
+    <h3>Stored only on your device</h3>
+    <p>The following never leaves your phone and is never uploaded to our servers:</p>
+    <ul class="body">
+      <li>Your profile photo</li>
+      <li>A local copy of your habit data, so the app works offline</li>
+      <li>App preferences — theme, reminder time, and similar settings</li>
+      <li>Your sign-in session</li>
+    </ul>
+  </section>
+
+  <section id="en-3">
+    <h2 class="sec"><span class="num">03</span> Why we process it</h2>
+    <table>
+      <tr><th>What</th><th>Why</th><th>Legal basis</th></tr>
+      <tr><td>Account information</td><td>To create your account, sign you in, and keep your data tied to you</td><td>Performance of a contract</td></tr>
+      <tr><td>Habit data</td><td>To provide the core function of the app and sync it across your devices</td><td>Performance of a contract</td></tr>
+      <tr><td>Mood entries</td><td>To show you your own mood history alongside your habits</td><td>Your consent, given each time you record one</td></tr>
+    </table>
+    <p>You can withdraw consent for mood entries at any time by deleting them in the app. Withdrawing consent doesn't affect anything processed before then.</p>
+  </section>
+
+  <section id="en-4">
+    <h2 class="sec"><span class="num">04</span> Where it's stored</h2>
+    <p>Your account and habit data are stored on servers operated by <strong>Supabase</strong> in the <strong>European Union (Ireland)</strong>.</p>
+    <ul class="body">
+      <li>All traffic between the app and the server uses HTTPS encryption</li>
+      <li>Database access is protected by row-level security, meaning your account can only ever read or write its own rows</li>
+      <li>We do not transfer your data outside the EU/EEA</li>
+    </ul>
+  </section>
+
+  <section id="en-5">
+    <h2 class="sec"><span class="num">05</span> Who we share it with</h2>
+    <p><strong>We do not sell your data, and we do not share it for advertising or marketing.</strong></p>
+    <p>Two service providers are involved in running the app:</p>
+    <table>
+      <tr><th>Provider</th><th>Role</th><th>What they see</th></tr>
+      <tr><td>Supabase</td><td>Backend hosting and authentication, acting as our data processor</td><td>The account and habit data described above</td></tr>
+      <tr><td>Google</td><td>Sign-in, only if you choose "Sign in with Google"</td><td>Your Google account name and email</td></tr>
+    </table>
+    <p>Rootine contains <strong>no analytics, no crash reporting, no advertising SDKs and no tracking libraries</strong>.</p>
+    <p>We may disclose data if we're legally required to — for example, in response to a valid court order.</p>
+  </section>
+
+  <section id="en-6">
+    <h2 class="sec"><span class="num">06</span> Permissions</h2>
+    <table>
+      <tr><th>Permission</th><th>What it's for</th></tr>
+      <tr><td>Internet</td><td>Signing in and syncing your data</td></tr>
+      <tr><td>Network state</td><td>Checking you're online before attempting a sync</td></tr>
+      <tr><td>Notifications</td><td>Sending the habit reminders you set up. Optional — you can decline and the app still works.</td></tr>
+    </table>
+  </section>
+
+  <section id="en-7">
+    <h2 class="sec"><span class="num">07</span> Device backups</h2>
+    <p>If you have Android's built-in backup switched on, your device may include Rootine's local database in the backup it sends to your own Google Drive. That backup belongs to you and is governed by Google's terms, not ours.</p>
+    <p>Your sign-in session and profile photo are deliberately excluded from these backups.</p>
+  </section>
+
+  <section id="en-8">
+    <h2 class="sec"><span class="num">08</span> How long we keep it</h2>
+    <p>We keep your data for as long as your account exists. When you delete your account, it's removed from our servers immediately and permanently — there's no recovery window and no archived copy.</p>
+  </section>
+
+  <section id="en-9">
+    <h2 class="sec"><span class="num">09</span> Your rights</h2>
+    <p>Under the UK and EU GDPR you have the right to:</p>
+    <ul class="body">
+      <li>Access the data we hold about you</li>
+      <li>Correct anything inaccurate</li>
+      <li>Delete your data</li>
+      <li>Receive a copy in a portable format</li>
+      <li>Object to or restrict how we process it</li>
+      <li>Withdraw consent where processing is based on it</li>
+    </ul>
+    <p>Email <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a> to exercise any of these. We'll respond within 30 days.</p>
+    <p>If you're unhappy with how we've handled your data, you can complain to the UK Information Commissioner's Office at <a href="https://ico.org.uk">ico.org.uk</a>, or to the supervisory authority in your own country.</p>
+  </section>
+
+  <section id="en-10">
+    <h2 class="sec"><span class="num">10</span> Deleting your account</h2>
+    <p>Open Rootine and go to <strong>Profile → Delete account</strong>. You'll be asked to confirm, then everything below is removed:</p>
+    <ul class="body">
+      <li>Your account and sign-in credentials</li>
+      <li>All habits, check-ins, mood entries, freeze tokens and challenges — on our servers and on your device</li>
+      <li>Your profile photo and app preferences</li>
+      <li>Any scheduled reminders</li>
+    </ul>
+    <p>If you no longer have the app installed, you can request deletion instead — see the <a href="delete-account.html">account deletion page</a>.</p>
+  </section>
+
+  <section id="en-11">
+    <h2 class="sec"><span class="num">11</span> Age requirement</h2>
+    <p>Rootine is intended for people aged <strong>16 and over</strong>. We don't knowingly collect data from anyone under 16. If we become aware that we have, we'll delete the account and its data. If you believe a child has created an account, contact us at <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a>.</p>
+  </section>
+
+  <section id="en-12">
+    <h2 class="sec"><span class="num">12</span> Changes</h2>
+    <p>If this policy changes, we'll update this page and the date at the top. If a change materially affects how your data is handled, we'll tell you in the app before it takes effect.</p>
+  </section>
+
+  <section id="en-13">
+    <h2 class="sec"><span class="num">13</span> Contact</h2>
+    <p>Questions about this policy or your data: <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a></p>
+  </section>
+
+</main>
+
+<!-- ============================= TÜRKÇE ============================= -->
+<main class="wrap" data-lang="tr" hidden>
+
+  <h1>Gizlilik Politikası</h1>
+  <p class="dateline">Son güncelleme: 10 Ağustos 2026</p>
+
+  <div class="glance">
+    <h2>Kısaca</h2>
+    <ul>
+      <li><span>Rootine; alışkanlıklarını, tamamlamalarını ve ruh hali kayıtlarını güvende tutmak ve cihazların arasında eşitlemek için saklar.</span></li>
+      <li><span>Verilerini satmıyoruz. Uygulamada <b>reklam, analitik ve takip yok</b>.</span></li>
+      <li><span>Hesabını ve içindeki her şeyi istediğin an uygulama içinden silebilirsin.</span></li>
+      <li><span>Verilerin Avrupa Birliği'nde (İrlanda) saklanıyor.</span></li>
+    </ul>
+  </div>
+
+  <nav class="toc">
+    <h2>İçindekiler</h2>
+    <ol>
+      <li><a href="#tr-1">1. Kimiz</a></li>
+      <li><a href="#tr-2">2. Neleri topluyoruz</a></li>
+      <li><a href="#tr-3">3. Neden işliyoruz</a></li>
+      <li><a href="#tr-4">4. Nerede saklanıyor</a></li>
+      <li><a href="#tr-5">5. Kimlerle paylaşıyoruz</a></li>
+      <li><a href="#tr-6">6. İzinler</a></li>
+      <li><a href="#tr-7">7. Cihaz yedekleri</a></li>
+      <li><a href="#tr-8">8. Ne kadar süre saklıyoruz</a></li>
+      <li><a href="#tr-9">9. Haklarınız</a></li>
+      <li><a href="#tr-10">10. Hesabını silme</a></li>
+      <li><a href="#tr-11">11. Yaş sınırı</a></li>
+      <li><a href="#tr-12">12. Değişiklikler</a></li>
+      <li><a href="#tr-13">13. İletişim</a></li>
+    </ol>
+  </nav>
+
+  <section id="tr-1">
+    <h2 class="sec"><span class="num">01</span> Kimiz</h2>
+    <p>Rootine, Android için bir alışkanlık takip uygulamasıdır. Bu politika uygulamanın neleri topladığını, neden topladığını ve senin bunun üzerinde nasıl bir kontrolün olduğunu anlatır.</p>
+    <p>İngiltere GDPR'ı ve AB GDPR'ı kapsamında veri sorumlusu Rootine'in geliştiricisidir. Bize <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a> adresinden ulaşabilirsin.</p>
+  </section>
+
+  <section id="tr-2">
+    <h2 class="sec"><span class="num">02</span> Neleri topluyoruz</h2>
+
+    <h3>Hesap bilgileri</h3>
+    <ul class="body">
+      <li>E-posta adresin</li>
+      <li>Şifren — altyapı sağlayıcımız tarafından yalnızca şifrelenmiş özet (hash) olarak saklanır; okunabilir hâlini hiçbir zaman görmez ve saklamayız</li>
+      <li>Google ile giriş yaparsan: Google hesabındaki adın ve e-posta adresin, bir de geçici giriş anahtarı</li>
+      <li>Benzersiz bir hesap kimliği ve kayıt tarihin</li>
+    </ul>
+
+    <h3>Alışkanlık verilerin</h3>
+    <ul class="body">
+      <li>Yazdığın alışkanlık adları, açıklamalar ve motivasyon notları</li>
+      <li>Seçtiğin ikonlar, tekrar düzenleri ve hatırlatma saatleri</li>
+      <li>Tamamlama kayıtların — hangi alışkanlığı ne zaman tamamladığın</li>
+      <li>Büyüme aşaması ve mezuniyet ilerlemen</li>
+      <li>Dondurma jetonu bakiyen ve kullanımın</li>
+      <li>Başlattığın challenge'lar ve bunlardaki ilerlemen</li>
+    </ul>
+
+    <h3>Ruh hali kayıtları</h3>
+    <p>Ruh hali kaydı özelliğini kullanırsan girdiğin ruh halini ve tarihini saklarız. Bu isteğe bağlıdır — uygulama bu özellik olmadan da tam olarak çalışır.</p>
+    <div class="callout">
+      <p><strong>Ruh hali verisini hassas kabul ediyoruz.</strong> Kişinin iyilik hâline dair bir şey söyleyebildiği için diğer verilerle aynı korumayı görür ve fazlası yapılmaz: hiçbir zaman analiz edilmez, profilleme yapılmaz, paylaşılmaz veya satılmaz. Yalnızca sana kendi geçmişini göstermek için vardır ve istediğin an silebilirsin.</p>
+    </div>
+
+    <h3>Yalnızca cihazında duranlar</h3>
+    <p>Aşağıdakiler telefonundan hiç çıkmaz, sunucularımıza yüklenmez:</p>
+    <ul class="body">
+      <li>Profil fotoğrafın</li>
+      <li>Alışkanlık verilerinin yerel kopyası — uygulamanın çevrimdışı çalışabilmesi için</li>
+      <li>Uygulama tercihlerin — tema, hatırlatma saati ve benzeri ayarlar</li>
+      <li>Oturum bilgin</li>
+    </ul>
+  </section>
+
+  <section id="tr-3">
+    <h2 class="sec"><span class="num">03</span> Neden işliyoruz</h2>
+    <table>
+      <tr><th>Ne</th><th>Niçin</th><th>Hukuki dayanak</th></tr>
+      <tr><td>Hesap bilgileri</td><td>Hesabını oluşturmak, girişini sağlamak ve verilerini sana bağlı tutmak</td><td>Sözleşmenin ifası</td></tr>
+      <tr><td>Alışkanlık verileri</td><td>Uygulamanın temel işlevini sunmak ve cihazların arasında eşitlemek</td><td>Sözleşmenin ifası</td></tr>
+      <tr><td>Ruh hali kayıtları</td><td>Kendi ruh hali geçmişini alışkanlıklarınla birlikte göstermek</td><td>Her kayıtta verdiğin açık rıza</td></tr>
+    </table>
+    <p>Ruh hali kayıtları için verdiğin rızayı, kayıtları uygulamadan silerek istediğin an geri çekebilirsin. Rızanın geri çekilmesi, o ana kadar yapılmış işlemeyi etkilemez.</p>
+  </section>
+
+  <section id="tr-4">
+    <h2 class="sec"><span class="num">04</span> Nerede saklanıyor</h2>
+    <p>Hesap ve alışkanlık verilerin, <strong>Supabase</strong> tarafından işletilen ve <strong>Avrupa Birliği'nde (İrlanda)</strong> bulunan sunucularda saklanır.</p>
+    <ul class="body">
+      <li>Uygulama ile sunucu arasındaki tüm trafik HTTPS ile şifrelenir</li>
+      <li>Veritabanı erişimi satır düzeyi güvenlikle korunur; yani hesabın yalnızca kendi satırlarını okuyabilir ve yazabilir</li>
+      <li>Verilerini AB/AEA dışına aktarmıyoruz</li>
+    </ul>
+  </section>
+
+  <section id="tr-5">
+    <h2 class="sec"><span class="num">05</span> Kimlerle paylaşıyoruz</h2>
+    <p><strong>Verilerini satmıyoruz ve reklam veya pazarlama amacıyla paylaşmıyoruz.</strong></p>
+    <p>Uygulamanın çalışması için iki hizmet sağlayıcı devrede:</p>
+    <table>
+      <tr><th>Sağlayıcı</th><th>Rolü</th><th>Gördüğü veri</th></tr>
+      <tr><td>Supabase</td><td>Altyapı ve kimlik doğrulama — veri işleyenimiz</td><td>Yukarıda anlatılan hesap ve alışkanlık verileri</td></tr>
+      <tr><td>Google</td><td>Giriş — yalnızca "Google ile giriş yap"ı seçersen</td><td>Google hesabındaki adın ve e-posta adresin</td></tr>
+    </table>
+    <p>Rootine'de <strong>analitik, çökme raporlama, reklam SDK'sı ve takip kütüphanesi yoktur</strong>.</p>
+    <p>Hukuken zorunlu olduğumuz durumlarda — örneğin geçerli bir mahkeme kararı üzerine — veri paylaşabiliriz.</p>
+  </section>
+
+  <section id="tr-6">
+    <h2 class="sec"><span class="num">06</span> İzinler</h2>
+    <table>
+      <tr><th>İzin</th><th>Ne için</th></tr>
+      <tr><td>İnternet</td><td>Giriş yapmak ve verilerini eşitlemek</td></tr>
+      <tr><td>Ağ durumu</td><td>Eşitleme denemeden önce çevrimiçi olduğunu kontrol etmek</td></tr>
+      <tr><td>Bildirimler</td><td>Kurduğun alışkanlık hatırlatmalarını göndermek. İsteğe bağlı — reddedebilirsin, uygulama yine çalışır.</td></tr>
+    </table>
+  </section>
+
+  <section id="tr-7">
+    <h2 class="sec"><span class="num">07</span> Cihaz yedekleri</h2>
+    <p>Android'in yerleşik yedekleme özelliği açıksa, cihazın Rootine'in yerel veritabanını kendi Google Drive yedeğine dahil edebilir. Bu yedek sana aittir ve bizim değil Google'ın koşullarına tabidir.</p>
+    <p>Oturum bilgin ve profil fotoğrafın bu yedeklerin dışında bırakılmıştır.</p>
+  </section>
+
+  <section id="tr-8">
+    <h2 class="sec"><span class="num">08</span> Ne kadar süre saklıyoruz</h2>
+    <p>Verilerini hesabın var olduğu sürece saklarız. Hesabını sildiğinde sunucularımızdan anında ve kalıcı olarak kaldırılır — geri alma süresi ya da arşiv kopyası yoktur.</p>
+  </section>
+
+  <section id="tr-9">
+    <h2 class="sec"><span class="num">09</span> Haklarınız</h2>
+    <p>İngiltere ve AB GDPR'ı kapsamında şu haklara sahipsin:</p>
+    <ul class="body">
+      <li>Hakkındaki verilere erişme</li>
+      <li>Yanlış olanları düzelttirme</li>
+      <li>Verilerini sildirme</li>
+      <li>Taşınabilir bir formatta kopyasını alma</li>
+      <li>İşlenmesine itiraz etme veya kısıtlama isteme</li>
+      <li>Rızaya dayanan işlemelerde rızanı geri çekme</li>
+    </ul>
+    <p>Bu haklardan herhangi birini kullanmak için <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a> adresine yaz. 30 gün içinde yanıt veririz.</p>
+    <p>Verilerini ele alış şeklimizden memnun değilsen İngiltere Bilgi Komiserliği Ofisi'ne (<a href="https://ico.org.uk">ico.org.uk</a>) ya da kendi ülkendeki denetim makamına şikâyette bulunabilirsin.</p>
+  </section>
+
+  <section id="tr-10">
+    <h2 class="sec"><span class="num">10</span> Hesabını silme</h2>
+    <p>Rootine'i aç ve <strong>Profil → Hesabı Sil</strong> yolunu izle. Onay istendikten sonra aşağıdakilerin tamamı kaldırılır:</p>
+    <ul class="body">
+      <li>Hesabın ve giriş bilgilerin</li>
+      <li>Tüm alışkanlıklar, tamamlamalar, ruh hali kayıtları, dondurma jetonları ve challenge'lar — hem sunucumuzda hem cihazında</li>
+      <li>Profil fotoğrafın ve uygulama tercihlerin</li>
+      <li>Zamanlanmış tüm hatırlatmalar</li>
+    </ul>
+    <p>Uygulama artık kurulu değilse silme talebinde bulunabilirsin — <a href="delete-account.html">hesap silme sayfasına</a> bak.</p>
+  </section>
+
+  <section id="tr-11">
+    <h2 class="sec"><span class="num">11</span> Yaş sınırı</h2>
+    <p>Rootine <strong>16 yaş ve üzeri</strong> kullanıcılar içindir. 16 yaşından küçüklerden bilerek veri toplamayız. Böyle bir durumu fark edersek hesabı ve verilerini sileriz. Bir çocuğun hesap oluşturduğunu düşünüyorsan <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a> adresinden bize bildir.</p>
+  </section>
+
+  <section id="tr-12">
+    <h2 class="sec"><span class="num">12</span> Değişiklikler</h2>
+    <p>Bu politika değişirse sayfayı ve üstteki tarihi güncelleriz. Değişiklik verilerinin ele alınışını esaslı biçimde etkiliyorsa, yürürlüğe girmeden önce uygulama içinde sana bildiririz.</p>
+  </section>
+
+  <section id="tr-13">
+    <h2 class="sec"><span class="num">13</span> İletişim</h2>
+    <p>Bu politika veya verilerin hakkındaki sorular için: <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span data-lang="en">Rootine · <a href="delete-account.html">Delete your account</a> · <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a></span>
+    <span data-lang="tr" hidden>Rootine · <a href="delete-account.html">Hesabını sil</a> · <a href="mailto:rootineteam@gmail.com">rootineteam@gmail.com</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var buttons = document.querySelectorAll('.lang button');
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.hidden = (el.getAttribute('data-lang') !== lang);
+    });
+    buttons.forEach(function(b){
+      b.setAttribute('aria-pressed', b.getAttribute('data-set') === lang ? 'true' : 'false');
+    });
+    document.documentElement.lang = lang;
+  }
+  buttons.forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-set')); });
+  });
+  setLang((navigator.language || 'en').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+})();
+</script>
+
+</body>
+</html>
