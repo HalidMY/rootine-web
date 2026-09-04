@@ -178,13 +178,14 @@
 <main id="top" class="wrap" data-lang="en">
 
   <h1>Privacy Policy</h1>
-  <p class="dateline">Last updated: 25 August 2026</p>
+  <p class="dateline">Last updated: 4 September 2026</p>
 
   <div class="glance">
     <h2>The short version</h2>
     <ul>
-      <li><span>Rootine stores your habits, check-ins and mood entries so they stay safe and sync across your devices.</span></li>
+      <li><span>Rootine stores your habits and check-ins so they stay safe and sync across your devices.</span></li>
       <li><span>We don't sell your data. There are <b>no ads, no analytics, and no tracking</b> in this app.</span></li>
+      <li><span>If the app crashes, a technical crash report goes to Sentry (EU). It never contains your habit names, email or password.</span></li>
       <li><span>You can delete your account and everything in it from inside the app, at any time.</span></li>
       <li><span>Your data is stored in the European Union (Ireland).</span></li>
     </ul>
@@ -236,11 +237,16 @@
       <li>Challenges you've started and your progress in them</li>
     </ul>
 
-    <h3>Mood entries</h3>
-    <p>If you use the mood check-in feature, we store the mood you record and the date. This is optional — the app works fully without it.</p>
-    <div class="callout">
-      <p><strong>We treat mood data as sensitive.</strong> It can say something about your wellbeing, so it gets the same protection as everything else and nothing more is done with it: it is never analysed, profiled, shared or sold. It exists only to show you your own history, and you can delete it at any time.</p>
-    </div>
+    <h3>Crash reports</h3>
+    <p>If the app crashes or hits an unexpected error, a technical report is sent to our crash reporting provider, Sentry. It contains:</p>
+    <ul class="body">
+      <li>The technical error and the point in the app where it happened</li>
+      <li>App version, device model and Android version</li>
+      <li>A short trail of the last app screens and actions before the error, with personal text removed</li>
+      <li>A random installation identifier, so repeated reports from the same installation can be grouped. It is not linked to your account</li>
+      <li>Your IP address is visible to Sentry as part of the network connection, and Sentry derives an approximate, city-level location from it. We do not use this to identify you</li>
+    </ul>
+    <p>Crash reports never contain your habit names, notes, email address, password or screenshots.</p>
 
     <h3>Stored only on your device</h3>
     <p>The following never leaves your phone and is never uploaded to our servers:</p>
@@ -258,14 +264,14 @@
       <tr><th>What</th><th>Why</th><th>Legal basis</th></tr>
       <tr><td>Account information</td><td>To create your account, sign you in, and keep your data tied to you</td><td>Performance of a contract</td></tr>
       <tr><td>Habit data</td><td>To provide the core function of the app and sync it across your devices</td><td>Performance of a contract</td></tr>
-      <tr><td>Mood entries</td><td>To show you your own mood history alongside your habits</td><td>Your consent, given each time you record one</td></tr>
+      <tr><td>Crash reports</td><td>To find and fix bugs that make the app crash</td><td>Legitimate interest in keeping the app working</td></tr>
     </table>
-    <p>You can withdraw consent for mood entries at any time by deleting them in the app. Withdrawing consent doesn't affect anything processed before then.</p>
   </section>
 
   <section id="en-4">
     <h2 class="sec"><span class="num">04</span> Where it's stored</h2>
     <p>Your account and habit data are stored on servers operated by <strong>Supabase</strong> in the <strong>European Union (Ireland)</strong>.</p>
+    <p>Crash reports are stored by <strong>Sentry</strong> in the <strong>European Union (Frankfurt, Germany)</strong>.</p>
     <ul class="body">
       <li>All traffic between the app and the server uses HTTPS encryption</li>
       <li>Database access is protected by row-level security, meaning your account can only ever read or write its own rows</li>
@@ -276,13 +282,14 @@
   <section id="en-5">
     <h2 class="sec"><span class="num">05</span> Who we share it with</h2>
     <p><strong>We do not sell your data, and we do not share it for advertising or marketing.</strong></p>
-    <p>Two service providers are involved in running the app:</p>
+    <p>Three service providers are involved in running the app:</p>
     <table>
       <tr><th>Provider</th><th>Role</th><th>What they see</th></tr>
       <tr><td>Supabase</td><td>Backend hosting and authentication, acting as our data processor</td><td>The account and habit data described above</td></tr>
       <tr><td>Google</td><td>Sign-in, only if you choose "Sign in with Google"</td><td>Your Google account name and email</td></tr>
+      <tr><td>Sentry</td><td>Crash reporting, acting as our data processor</td><td>The crash reports described above</td></tr>
     </table>
-    <p>Rootine contains <strong>no analytics, no crash reporting, no advertising SDKs and no tracking libraries</strong>.</p>
+    <p>Rootine contains <strong>no analytics, no advertising SDKs and no tracking libraries</strong>. Sentry is the only third-party SDK in the app, and it is used solely for crash reporting.</p>
     <p>We may disclose data if we're legally required to — for example, in response to a valid court order.</p>
   </section>
 
@@ -305,6 +312,7 @@
   <section id="en-8">
     <h2 class="sec"><span class="num">08</span> How long we keep it</h2>
     <p>We keep your data for as long as your account exists. When you delete your account, it's removed from our servers immediately and permanently — there's no recovery window and no archived copy.</p>
+    <p>Crash reports are kept by Sentry for 90 days and then deleted automatically. They are not linked to your account, so they are not affected by account deletion.</p>
   </section>
 
   <section id="en-9">
@@ -327,7 +335,7 @@
     <p>Open Rootine and go to <strong>Profile → Delete account</strong>. You'll be asked to confirm, then everything below is removed:</p>
     <ul class="body">
       <li>Your account and sign-in credentials</li>
-      <li>All habits, check-ins, mood entries, freeze tokens and challenges — on our servers and on your device</li>
+      <li>All habits, check-ins, freeze tokens and challenges — on our servers and on your device</li>
       <li>Your profile photo and app preferences</li>
       <li>Any scheduled reminders</li>
     </ul>
@@ -355,13 +363,14 @@
 <main class="wrap" data-lang="tr" hidden>
 
   <h1>Gizlilik Politikası</h1>
-  <p class="dateline">Son güncelleme: 25 Ağustos 2026</p>
+  <p class="dateline">Son güncelleme: 4 Eylül 2026</p>
 
   <div class="glance">
     <h2>Kısaca</h2>
     <ul>
-      <li><span>Rootine; alışkanlıklarını, tamamlamalarını ve ruh hali kayıtlarını güvende tutmak ve cihazların arasında eşitlemek için saklar.</span></li>
+      <li><span>Rootine; alışkanlıklarını ve tamamlamalarını güvende tutmak ve cihazların arasında eşitlemek için saklar.</span></li>
       <li><span>Verilerini satmıyoruz. Uygulamada <b>reklam, analitik ve takip yok</b>.</span></li>
+      <li><span>Uygulama çökerse Sentry'ye (AB) teknik bir çökme raporu gider. Bu rapor alışkanlık adlarını, e-postanı ya da şifreni asla içermez.</span></li>
       <li><span>Hesabını ve içindeki her şeyi istediğin an uygulama içinden silebilirsin.</span></li>
       <li><span>Verilerin Avrupa Birliği'nde (İrlanda) saklanıyor.</span></li>
     </ul>
@@ -413,11 +422,16 @@
       <li>Başlattığın challenge'lar ve bunlardaki ilerlemen</li>
     </ul>
 
-    <h3>Ruh hali kayıtları</h3>
-    <p>Ruh hali kaydı özelliğini kullanırsan girdiğin ruh halini ve tarihini saklarız. Bu isteğe bağlıdır — uygulama bu özellik olmadan da tam olarak çalışır.</p>
-    <div class="callout">
-      <p><strong>Ruh hali verisini hassas kabul ediyoruz.</strong> Kişinin iyilik hâline dair bir şey söyleyebildiği için diğer verilerle aynı korumayı görür ve fazlası yapılmaz: hiçbir zaman analiz edilmez, profilleme yapılmaz, paylaşılmaz veya satılmaz. Yalnızca sana kendi geçmişini göstermek için vardır ve istediğin an silebilirsin.</p>
-    </div>
+    <h3>Çökme raporları</h3>
+    <p>Uygulama çökerse ya da beklenmedik bir hatayla karşılaşırsa, çökme raporlama sağlayıcımız Sentry'ye teknik bir rapor gönderilir. Bu rapor şunları içerir:</p>
+    <ul class="body">
+      <li>Teknik hata ve uygulamada oluştuğu nokta</li>
+      <li>Uygulama sürümü, cihaz modeli ve Android sürümü</li>
+      <li>Hatadan önceki son ekranların ve işlemlerin kısa izi; kişisel metinler çıkarılmış hâlde</li>
+      <li>Aynı kurulumdan gelen raporların gruplanabilmesi için rastgele bir kurulum kimliği. Hesabınla ilişkilendirilmez</li>
+      <li>IP adresin, ağ bağlantısının bir parçası olarak Sentry tarafından görülür ve Sentry bundan şehir düzeyinde yaklaşık bir konum türetir. Bunu seni tanımlamak için kullanmayız</li>
+    </ul>
+    <p>Çökme raporları alışkanlık adlarını, notlarını, e-posta adresini, şifreni ya da ekran görüntülerini hiçbir zaman içermez.</p>
 
     <h3>Yalnızca cihazında duranlar</h3>
     <p>Aşağıdakiler telefonundan hiç çıkmaz, sunucularımıza yüklenmez:</p>
@@ -435,14 +449,14 @@
       <tr><th>Ne</th><th>Niçin</th><th>Hukuki dayanak</th></tr>
       <tr><td>Hesap bilgileri</td><td>Hesabını oluşturmak, girişini sağlamak ve verilerini sana bağlı tutmak</td><td>Sözleşmenin ifası</td></tr>
       <tr><td>Alışkanlık verileri</td><td>Uygulamanın temel işlevini sunmak ve cihazların arasında eşitlemek</td><td>Sözleşmenin ifası</td></tr>
-      <tr><td>Ruh hali kayıtları</td><td>Kendi ruh hali geçmişini alışkanlıklarınla birlikte göstermek</td><td>Her kayıtta verdiğin açık rıza</td></tr>
+      <tr><td>Çökme raporları</td><td>Uygulamayı çökerten hataları bulmak ve düzeltmek</td><td>Uygulamayı çalışır tutmaya yönelik meşru menfaat</td></tr>
     </table>
-    <p>Ruh hali kayıtları için verdiğin rızayı, kayıtları uygulamadan silerek istediğin an geri çekebilirsin. Rızanın geri çekilmesi, o ana kadar yapılmış işlemeyi etkilemez.</p>
   </section>
 
   <section id="tr-4">
     <h2 class="sec"><span class="num">04</span> Nerede saklanıyor</h2>
     <p>Hesap ve alışkanlık verilerin, <strong>Supabase</strong> tarafından işletilen ve <strong>Avrupa Birliği'nde (İrlanda)</strong> bulunan sunucularda saklanır.</p>
+    <p>Çökme raporları, <strong>Sentry</strong> tarafından <strong>Avrupa Birliği'nde (Frankfurt, Almanya)</strong> saklanır.</p>
     <ul class="body">
       <li>Uygulama ile sunucu arasındaki tüm trafik HTTPS ile şifrelenir</li>
       <li>Veritabanı erişimi satır düzeyi güvenlikle korunur; yani hesabın yalnızca kendi satırlarını okuyabilir ve yazabilir</li>
@@ -453,13 +467,14 @@
   <section id="tr-5">
     <h2 class="sec"><span class="num">05</span> Kimlerle paylaşıyoruz</h2>
     <p><strong>Verilerini satmıyoruz ve reklam veya pazarlama amacıyla paylaşmıyoruz.</strong></p>
-    <p>Uygulamanın çalışması için iki hizmet sağlayıcı devrede:</p>
+    <p>Uygulamanın çalışması için üç hizmet sağlayıcı devrede:</p>
     <table>
       <tr><th>Sağlayıcı</th><th>Rolü</th><th>Gördüğü veri</th></tr>
       <tr><td>Supabase</td><td>Altyapı ve kimlik doğrulama — veri işleyenimiz</td><td>Yukarıda anlatılan hesap ve alışkanlık verileri</td></tr>
       <tr><td>Google</td><td>Giriş — yalnızca "Google ile giriş yap"ı seçersen</td><td>Google hesabındaki adın ve e-posta adresin</td></tr>
+      <tr><td>Sentry</td><td>Çökme raporlama, veri işleyenimiz olarak</td><td>Yukarıda anlatılan çökme raporları</td></tr>
     </table>
-    <p>Rootine'de <strong>analitik, çökme raporlama, reklam SDK'sı ve takip kütüphanesi yoktur</strong>.</p>
+    <p>Rootine'de <strong>analitik, reklam SDK'sı ve takip kütüphanesi yoktur</strong>. Uygulamadaki tek üçüncü taraf SDK Sentry'dir ve yalnızca çökme raporlama için kullanılır.</p>
     <p>Hukuken zorunlu olduğumuz durumlarda — örneğin geçerli bir mahkeme kararı üzerine — veri paylaşabiliriz.</p>
   </section>
 
@@ -475,13 +490,14 @@
 
   <section id="tr-7">
     <h2 class="sec"><span class="num">07</span> Cihaz yedekleri</h2>
-    <p>Rootine, Android'in yerleşik yedekleme sisteminin dışında tutulmuştur. Uygulamadaki hiçbir şey &mdash; alışkanlıkların, tamamlamaların, oturum bilgin, profil foto&#287;raf&#305;n &mdash; Google Drive'a kopyalanmaz ya da cihazdan cihaza aktarım araçlarıyla taşınmaz.</p>
+    <p>Rootine, Android'in yerleşik yedekleme sisteminin dışında tutulmuştur. Uygulamadaki hiçbir şey &mdash; alışkanlıkların, tamamlamaların, oturum bilgin, profil fotoğrafın &mdash; Google Drive'a kopyalanmaz ya da cihazdan cihaza aktarım araçlarıyla taşınmaz.</p>
     <p>Bu bilinçli bir tercih. Verilerin hesabında durduğu için yeni bir cihazda giriş yapman her şeyi geri getirir. Cihaz yedeklerinin dışında tutmak ise bir kopyanın beklemediğin bir yerde kalmasını önler.</p>
   </section>
 
   <section id="tr-8">
     <h2 class="sec"><span class="num">08</span> Ne kadar süre saklıyoruz</h2>
     <p>Verilerini hesabın var olduğu sürece saklarız. Hesabını sildiğinde sunucularımızdan anında ve kalıcı olarak kaldırılır — geri alma süresi ya da arşiv kopyası yoktur.</p>
+    <p>Çökme raporları Sentry'de 90 gün tutulur, sonra kendiliğinden silinir. Hesabınla ilişkilendirilmedikleri için hesap silmeden etkilenmezler.</p>
   </section>
 
   <section id="tr-9">
@@ -504,7 +520,7 @@
     <p>Rootine'i aç ve <strong>Profil → Hesabı Sil</strong> yolunu izle. Onay istendikten sonra aşağıdakilerin tamamı kaldırılır:</p>
     <ul class="body">
       <li>Hesabın ve giriş bilgilerin</li>
-      <li>Tüm alışkanlıklar, tamamlamalar, ruh hali kayıtları, dondurma jetonları ve challenge'lar — hem sunucumuzda hem cihazında</li>
+      <li>Tüm alışkanlıklar, tamamlamalar, dondurma jetonları ve challenge'lar — hem sunucumuzda hem cihazında</li>
       <li>Profil fotoğrafın ve uygulama tercihlerin</li>
       <li>Zamanlanmış tüm hatırlatmalar</li>
     </ul>
